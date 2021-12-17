@@ -2,16 +2,18 @@
     padding: 0px;
     margin: 0px;
 }
+
+/*  User card */
 .usercard{
     border: 15px solid #16a2b8;
     height: 400px;
-    width: 100%;
+    width: 110%;
 }
 .topcard{
     height: 30%;
-    width: 100%;
+    width: 110%;
+    padding-left: 1em;
     background-color: #16a2b8;
-    
     
 }
 .p-pic{
@@ -19,6 +21,7 @@
     width: 150px;
     margin-top: 50px;
 }
+
 .main{
     padding: 50px;
 }
