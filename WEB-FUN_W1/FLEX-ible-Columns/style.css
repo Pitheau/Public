@@ -1,17 +1,24 @@
 
-*{
-    margin: 0px;
-    width: 0px;
-}
-
 .row {
     display: flex;
-    
-
 }
 .col {
-    display: flex: 1; 
+    flex: 1;
     padding: 10px;
     margin: 10px;
-    bac
+    background-color: rgb(99, 189, 189);
+}
+
+.col-2 {
+    flex: 2;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(224, 255, 242);
+
+}
+.col-3 {
+    flex: 3;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 133, 207);
 }
