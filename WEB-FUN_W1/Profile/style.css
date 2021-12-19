@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0px;
 }
-
+/* Navigation Bar*/
 .nav{
     background-color: black;
     color: white;
@@ -15,6 +15,7 @@
 }
 .nav div p{
     font-size: 12px;
+    width: 25%;
 }
 .nav button{
     background-color: #16a2b8;
@@ -22,8 +23,35 @@
     padding: 6px 12px;
 }
 
+/* Main Container */
+
+.main{
+    height: 70%;
+    width: 100%;
+
+}
+/* Flex Column 1 */
+
+.col-1{
+    flex: 3;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Flex Column 2 */
+.col-2{
+    flex: 2;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+
+/* Multiclass CSS */
 .flex{
     display: flex;
+
 }
 .align-center{
     align-items: center;
