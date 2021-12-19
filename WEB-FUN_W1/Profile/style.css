@@ -40,6 +40,41 @@
     
 }
 
+/*  User card */
+.usercard{
+    border: 15px solid #16a2b8;
+    height: 400px;
+    width: 110%;
+}
+.topcard{
+    height: 30%;
+    width: 110%;
+    padding-left: 1em;
+    background-color: #16a2b8;
+    
+}
+.p-pic{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.main{
+    padding: 50px;
+}
+
+.flex{
+    display: flex;
+}
+.icons{
+    height: 15px;
+    width: 15px;
+
+}
+h1{
+    margin-top: 2em;
+}
+
 /* Flex Column 2 */
 .col-2{
     flex: 2;
