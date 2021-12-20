@@ -45,7 +45,7 @@
 
 .usercard{
     width: 70%;
-    height: 50%;
+    height: 60%;
     border: 3px solid black;
     color: black;
     margin-bottom: 1em;
@@ -56,10 +56,27 @@
     background-color: cadetblue;
 }
 .header-usercard img{
-    height: 20px;
-    width: 20px;
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    margin-top: 35px;
 }
 
+.usercard h1{
+
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.usercard-body{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+.usercard-body img{
+    width: 15px;
+    height: 15px;
+}
 .education{
     width: 70%;
     height: 40%;
@@ -71,16 +88,40 @@
     background-color: black;
     color: white
 }
+.education-body{
+    margin-top: 10px;
+}
 
 
 /* Flex Column 2 */
 
 .col-2{
     flex:2;
-    background-color: blueviolet;
+    padding-right: 2em;
+}
+
+.connection-requests{
+
+    width: 100%;
+    height: 30%;
+    border: 3px solid black;
 
 }
 
+.con-header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+.number{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border:1px solid gray;
+    border-radius: 50%;
+    
+}
 /* Multiclass CSS */
 .flex{
     display: flex;
