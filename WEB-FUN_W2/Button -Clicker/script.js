@@ -2,11 +2,9 @@ function login(element){
     element.innerText = "logout";
 }
 function removeButton(element) {
-    element.remove();
-    
+    element.remove();  
 }
 
-function alert(){
-    alert("Ninja was liked")
-    
+function message(){
+    alert("Ninja was liked")  
 }
