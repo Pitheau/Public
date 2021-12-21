@@ -1,0 +1,92 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.nav {
+    height: 75px;
+    background-color:rgb(215, 222, 230);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+.loginButton{
+    width: 50px;
+    color: white;
+    background-color: rgba(0, 204, 255, 0.801);
+}
+
+.nav input {
+    width: 20em;
+}
+
+.columns {
+    display: flex;
+    width: auto;
+}
+
+
+.col-2 {
+    flex: 2;
+    padding: 10px;
+}
+    
+.col-5 {
+    flex: 5;
+    padding: 40px;
+}
+
+.likeButton{
+    background-color: rgb(231, 205, 56);
+    padding: 6px;
+}
+
+.definition{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    
+
+}
+.submitDef{
+    margin-top: 30px;
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(90, 146, 90);
+    color: #000;
+    border: 3px solid black;
+}
+
+.content {
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    text-align: center;
+}
+.line-height{
+    line-height: 40px;
+}
+.align{
+    margin-top: 30px;
+}

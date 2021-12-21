@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>Dojonary</h1>
+            <input type="search" placeholder="Search">
+            <button class="loginButton" onclick="login(this)">login</button>
+        </div>
+        <div class="columns">
+            <div class="col-5">
+                <div class="content">
+                    <div class="col-2 flex">
+                        <div class="col-2 center line-height">
+                            <h1>Ninja</h1>
+                            <p>Noun</p>
+                            <p>Plural: ninjas</p>
+                            <button class="likeButton"  onclick="alertWord()">13 Likes</button>
+                        </div>
+                        <div class="col-5 center definition">
+                            <p>
+                            A practitioner skilled in the  <u >Japanese</u> art of <u>ninjutsu</u> 
+                            </p>
+                        </div>
+                    </div>    
+                </div>    
+                <div class="content">
+                    <div class="col-2 flex">
+                        <div class="col-2 center line-height"> 
+                            <h1>Ninja</h1>
+                            <p>Noun</p>
+                            <p>Plural: ninjas</p>
+                            <button class="likeButton">37 Likes</button>
+                        </div>
+                        <div class="col-5 center definition">
+                            <p>
+                            A <u>programmer</u> who breaks down problems with <u>zen</u>-like focus
+                            </p>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+            <div class="col-2 align">
+                <div class="content">
+                    <div class="col-2 center">
+                        <h1>Dojonary is defined by you</h1>
+                        <button class=submitDef onclick="removeButton(self)">Add Definition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
