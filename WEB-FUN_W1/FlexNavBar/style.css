@@ -1,33 +1,34 @@
 *{
-    background-color:black;
     padding: 5px;
     margin: 0px;
 }
 .nav{
     width: 100%;
     height: 20%;
-    background-color: black;
+    background-color: rgb(226, 134, 134);
     display: flex;
+    align-items: center;
 
 }
 
 .nav-title{
-    width: 60%;
+    width: 50%;
     color: white;
-    background-color: black;
+    background-color: rgb(218, 90, 90);
+    align-items: center;
 }
 .nav-links{
+    display: flex;
+    text-decoration: normal;
     width: 30%;
     font-family: 'Courier New', Courier, monospace;
     font: size 8px;
-    color:whitel;
-    background-color: black;
-    display: flex;
+    background-color: rgb(231, 105, 105);
     align-items: center;
     justify-content: right;
 
 }
-a{
-    background-color: black;
+.nav-links a{
+    font-size: 10px;
     font-style: normal;
 }
