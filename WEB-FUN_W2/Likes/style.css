@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 700px;
+    height: 800px;
+    margin: auto;
+}
+
+.network{
+   height: 60px;
+   background-color: black;
+   color: white;
+}
+ 
+
+.your-feed{
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    color: black;
+
+}
+.box{
+    height: 600px;
+    display: flex;
+    
+}
+.col-2{
+    flex: 2;
+    padding: 5px;
+
+}
+.col-5{
+    flex: 5;
+    padding: 5px;
+}
+.avatar{
+    height: 250px;
+    width: auto;
+    padding: 20px;
+    border: 5px solid black;
+    text-align: center;
+    margin: 5px;
+    margin-right: 20px;
+}
+.feed-messages{
+    height:150px;
+    width: auto;
+    border: 5px solid black;
+    margin: 5px;
+}
+.individual-messages{
+}
+.name{
+    display: flex;
+    
+}
+.names-likes{
+
+}
+.contents{
+    
+}
