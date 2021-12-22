@@ -1,5 +1,7 @@
 
-function custom() {
-    // we can include more code here if we want to
-    console.log("this message is coming from script.js");
+
+function vote(id){
+    var element = document.querySelector(id);
+    var newText = parseInt(element.innerText) + 1;
+    element.innerText = newText;
 }

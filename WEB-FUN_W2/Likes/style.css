@@ -5,7 +5,7 @@
 }
 
 .container{
-    width: 700px;
+    width: 600px;
     height: 800px;
     margin: auto;
 }
@@ -14,14 +14,17 @@
    height: 60px;
    background-color: black;
    color: white;
+   font-size: 40px;
+   padding-left: 20px;
 }
- 
 
 .your-feed{
     height: 60px;
     text-align: center;
     background-color: white;
     color: black;
+    font-size: 40px;
+    padding-top: 15px;
 
 }
 .box{
@@ -46,6 +49,21 @@
     text-align: center;
     margin: 5px;
     margin-right: 20px;
+    text-align: center;
+}
+
+.avatar img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 2em;
+}
+
+.add-avatar{
+    font-size: 13px;
+    margin-bottom: 2em;
+}
+.user-name{
+    padding-top: 2em;
 }
 .feed-messages{
     height:150px;
@@ -54,14 +72,26 @@
     margin: 5px;
 }
 .individual-messages{
+    padding: 10px;
 }
 .name{
+    display: flex; 
+    justify-content: space-between;
+}
+.likes-btn{
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
-.names-likes{
-
+.likes{
+    flex: 1;
+    width: 40px;
+    padding-right: 1em;
 }
-.contents{
-    
+.button{
+    flex: 1;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(204, 185, 14);
 }
