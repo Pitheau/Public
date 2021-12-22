@@ -1,0 +1,23 @@
+h1{
+    color: aqua;
+    background-color: black;
+    text-align: left;
+    font-family: monospace;
+    font-size:xx-large;
+}
+h2{
+    color: white;
+    background-color: purple;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3{
+    color:black;
+    background-color:mediumaquamarine;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-size: medium;
+}
