@@ -8,115 +8,104 @@
     <title>Profile</title>
 </head>
 <body>
+    <div class="pagecontainer">
+        <!-- Profile Navigation Bar -->
+        <div class="flex nav">
+            <div class="flex profile">
+                <h1>Profile</h1>
+                <p>Home</p>
+                <p>My Profile</p>
+                <p>Find Connections</p>
+            </div>
+            <div class="button">
+                <button class="align-right">Sign Out</button>
+            </div>
+        </div>    
 
-    <!-- Profile Navigation Bar -->
+        <div class="container flex">
 
-    <div class="flex nav align-center justify-around justify-between">
-        <div class="flex align-center justify-around justify-between">
-            <h1>Profile</h1>
-            <p>Home</p>
-            <p>My My Profile</p>
-            <p>Find Connections</p>
-        </div>
-        <button>Sign Out</button>
-    </div>    
+            <!-- Left column -->
 
-    <div class="container flex">
-
-        <!-- Left column -->
-
-        <div class="col-1">
-            <div class="usercard">
-                <div class="header-usercard">
-                    <img src="Images/user-circle.png" alt="selfie of user">
+            <div class="col-1">
+                <div class="usercard">
+                    <div class="header-usercard">
+                        <img src="Images/user-circle.png" alt="selfie of user">
+                    </div>
+                    <div class="usercard-body">
+                        <h1>Jane Doe</h1>
+                        <p> <img src="Images/map-marker.png" alt="pin">Seattle</p>
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                        <p><img src="Images/gear.png" alt="gears">edit profile</p>
+                    </div>
                 </div>
-                <div class="usercard-body">
-                    <h1>Jane Doe</h1>
-                    <p> <img src="/Users/conradpitheau/Documents/GitHub/Public/WEB-FUN_W1/Profile/Images/map-marker.png" alt="">Seattle</p>
-                    <p>Developer | Engineer | Problem Solver</p>
-                    <p>Master of shadows and the Internet!</p>
-                    <p><img src="/Users/conradpitheau/Documents/GitHub/Public/WEB-FUN_W1/Profile/Images/gear.png" alt="">edit profile</p>
+                <div class="education">
+                    <div class="flex text-align">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-body align-around align-between">
+                        <h4>Coding Dojo- Full Stack Bootcamp</h4>
+                        <p>Dec 2019 - March 2020</p>
+                        <h5>Triple black belt in Python, MERN, and CSS</h5>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="education">
-                <div class="flex text-align">
-                    <h3>Education</h3>
-                </div>
-                <div class="education-body align-around align-between">
-                    <h4>Coding Dojo- Full Stack Bootcamp</h4>
-                    <p>Dec 2019 - March 2020</p>
-                    <h5>Triple black belt in Python, MERN, and CSS</h5>
-                </div>
-                
-            </div>
-        </div>
-        <!-- Right column -->
-        <div class="col-2">
-            <div class= "connection-requests">
-                <div class="con-header flex align-around align-between align-center">
-                    <div class="con-header">
-                        <span class="number align-around">
-                        3
-                        </span>
-                    Connection Requests
-                        <div class="connection-cue">
-                            <span class="start">
-                            <img src="Images/todd-s.jpg" alt="selfie Todd E."> 
-                            Todd E.
+            <!-- Right column -->
+            <div class="col-2">
+                <div class= "connection-requests">
+                    <div class="con-header flex align-around align-between align-center">
+                        <div class="con-header">
+                            <span class="number align-around">
+                            3
                             </span>
-                            <span class="end">
-                            <img src="Images/accept-circle.png" alt="Accept">
-                            <img src="Images/close-circle.png" alt="Regect">
-                            </span>
-                        </div>
-                        <div class="connection-cue">
-                            <span class="start">
-                            <img src="Images/adrien-s.jpg" alt="selfie adrien-s."> 
-                            Adrien S.
-                            </span>
-                            <span class="end">
-                            <img src="Images/accept-circle.png" alt="Accept">
-                            <img src="Images/close-circle.png" alt="Regect">
-                            </span>
+                        Connection Requests
+                            <div class="connection-request-cue">
+                                <div>
+                                    <p> <img class="photo" src="Images/user-circle.png" alt=""> Todd E</p>
+                                </div>
+                                <div>
+                                    <img class="photo" src="Images/accept-circle.png" alt="Accept">
+                                    <img class="photo" src="Images/close-circle.png" alt="Regect">
+                                </div>
+                            </div>
+                            <div class="connection-cue">
+                                <div>
+                                    <img class="photo" src="Images/user-circle.png" alt=""> Phil K
+                                </div>
+                                <div>
+                                    <img class="photo" src="Images/accept-circle.png" alt="Accept">
+                                    <img class="photo" src="Images/close-circle.png" alt="Regect">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class= "your-connections">
+                    <div class="con-header flex align-center">
+                        <div class="con-header">
+                            <span class="number align-around">
+                            999+
+                            </span>
+                        Your Connections
+                            <div class="connection-cue ">
+                                <img class="photo" src="Images/user-circle.png" alt="selfie Todd E.">Adrien D 
+                            </div>
+                            <div class="connection-cue">
+                                <img class="photo" src="Images/user-circle.png" alt="">Anne J
+                            </div>
+                            <div class="connection-cue">
+                                <img class="photo" src="Images/user-circle.png" alt="selfie Todd E."> Alayne T
+                            </div>
+                            <div class="connection-cue">
+                                <img class="photo" src="Images/user-circle.png" alt="selfie adrien-s."> 
+                                Adrien S.
+                            </div>
+                        </div>    
+                    </div>   
+                </div>            
             </div>
-            <div class= "connection-requests">
-                <div class="con-header flex align-around align-between align-center">
-                    <div class="con-header">
-                        <span class="number align-around">
-                        999+
-                        </span>
-                    Your Connections
-                        <div class="your-connections">
-                            <span class="start">
-                            <img src="Images/todd-s.jpg" alt="selfie Todd E."> 
-                            Todd E.
-                            </span>
-                        </div>
-                        <div class="connection-cue">
-                            <span class="start">
-                            <img src="Images/adrien-s.jpg" alt="selfie adrien-s."> 
-                            Adrien S.
-                            </span>
-                        </div>
-                        <div class="connection-cue">
-                            <span class="start">
-                            <img src="Images/todd-s.jpg" alt="selfie Todd E."> 
-                            Todd E.
-                            </span>
-                        </div>
-                        <div class="connection-cue">
-                            <span class="start">
-                            <img src="Images/adrien-s.jpg" alt="selfie adrien-s."> 
-                            Adrien S.
-                            </span>
-                        </div>
-                    </div>    
-                </div>   
-            </div>            
         </div>
-    </div>
+    </div>   
 </body>
 </html>
