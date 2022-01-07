@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#calculator{
+    background-color: black;
+}
+#display{
+    margin-top: 2rem;
+    height: 50px;
+    width: 150px;
+}
+.row{
+    margin-left: 4em;
+    height: 50px;
+    width: 150px;
+}
+button .row{
+    height: 20px;
+    width: 20px;
+}
