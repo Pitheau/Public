@@ -1,5 +1,4 @@
 for (let i = 1; i <= 100; i++) {
-
     if (1 % 3 == 0 && i % 5 == 0) {
         console.log( "FissBuzz")
     }
