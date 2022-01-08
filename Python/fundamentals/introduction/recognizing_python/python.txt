@@ -30,7 +30,7 @@
             - add value
             - delete value
 - conditional
-    - if
+    - if #
     - else if
     - else
 - for loop
