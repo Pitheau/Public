@@ -18,12 +18,12 @@ if num1 > 45:  #conditionals
 else:
     print("It's lower")
 
-if len(string) < 5: #conditionals
+if len(string) < 5: # length conditionals
     print("It's a short word!")
-elif len(string) > 15:
-    print("It's a long word!")
-else:
-    print("Just right!")
+elif len(string) > 15:# elseif and length conditionals
+    print("It's a long word!") #console.log
+else: # conditional else
+    print("Just right!") # console.log
 
 for x in range(5): # for loop and conditionals
     print(x)
@@ -36,16 +36,16 @@ while(x < 5): #while loop and conditionals
     print(x)
     x += 1
 
-pizza_toppings.pop()
-pizza_toppings.pop(1)
+pizza_toppings.pop()# list delete values
+pizza_toppings.pop(1) #list delete values
 
-print(person)
-person.pop('eye_color')
-print(person)
+print(person) #console.log
+person.pop('eye_color') #list item remove
+print(person) #Console.log
 
-for topping in pizza_toppings:
-    if topping == 'Pepperoni':
-        continue
+for topping in pizza_toppings: # for loop
+    if topping == 'Pepperoni': # conditional
+        continue 
     print('After 1st if statement')
     if topping == 'Olives':
         break
