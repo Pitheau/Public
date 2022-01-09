@@ -1,9 +1,8 @@
-
-
-fruits = ['apple', 'banana', 'orange', 'strawberry']
-vegetables = ['lettuce', 'cucumber', 'carrots']
-fruits_and_vegetables = fruits + vegetables
-print(fruits_and_vegetables)
-salad = 3 * vegetables
-print(salad)
+drawer = ['documents', 'envelopes', 'pens']
+#access the drawer with index of 0 and print value
+print(drawer[0])  #prints documents
+#access the drawer with index of 1 and print value
+print(drawer[1]) #prints envelopes
+#access the drawer with index of 2 and print value
+print(drawer[2]) #prints pens
 
