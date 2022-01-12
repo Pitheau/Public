@@ -19,7 +19,7 @@ class BankAccount:
         return self
         
     def display_account_info(self):
-        print(f"Your balance is {self.balance}.")
+        print(f"Your balance is: {self.balance}.")
         return self
 
     def yield_interest(self):
@@ -33,15 +33,17 @@ class User:
     def __init__(self, name):
         self.name = name
         self.account = BankAccount(int_rate=.10, balance=1000)
-        return self
+ 
 
     def make_deposit(self, amount):
         self.account.deposit()
         return self
+
         
     def make_withdrawal(self,amount):
         self.account.withdraw()
         return self
+
 
 
     def display_user_balance(self):
