@@ -32,43 +32,27 @@ Pickeles = BankAccount(.01, 1000)
 class User:
     def __init__(self, name):
         self.name = name
-        self.account = BankAccount(int_rate=.10, balance=0)
+        self.account = BankAccount(int_rate=.10, balance=1000)
+        return self
 
     def make_deposit(self, amount):
-        self.account += amount
+        self.account.deposit()
+        return self
         
     def make_withdrawal(self,amount):
-        self.account -= amount
+        self.account.withdraw()
+        return self
 
 
     def display_user_balance(self):
-        print(self.name, self.account)
+        print(self.name, self.account.display_account_info())
+        return self
     
 
 Conrad = User("Conrad Pitheau")
 Wren = User("Wren Pitheau")
 Dvora = User("Dvora Pitheau")
 
-
-class User:
-    def __init__(self, name):
-        self.name = name
-        self.account_balance = 0
-
-    def make_deposit(self, amount):
-        self.account_balance += amount
-        
-    def make_withdrawal(self,amount):
-        self.account_balance -= amount
-
-
-    def display_user_balance(self):
-        print(self.name, self.account_balance)
-    
-
-Conrad = User("Conrad Pitheau")
-Wren = User("Wren Pitheau")
-Dvora = User("Dvora Pitheau")
 
 Conrad.make_deposit(1000)
 Conrad.make_deposit(1000)
