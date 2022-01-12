@@ -1,5 +1,4 @@
 
-
 class BankAccount:
 
     def __init__(self, int_rate, balance):
@@ -19,15 +18,28 @@ class BankAccount:
         return self
         
     def display_account_info(self):
-        print(f"Your balance is {self.balance}.")
+        print(f"Your balance {self.balance}")
         return self
 
-    def yield_interest(self):
-        self.balance += self.balance * self.int_rate
+    def interest_yeild(self):
+        if self.balance > 0:
+            self.balance += (self.balance * self.int_rate)
         return self
+
+    @classmethod
+    def print_all_accounts(cls):
+            for account in cls.accounts:
+                account.display_account_info()
+
+
 
 Peanut = BankAccount(.10, 100)
 Pickeles = BankAccount(.01, 1000)
 
-Pickeles.deposit(100).deposit(100).deposit(100).withdraw(100).yield_interest().display_account_info()
-Peanut.deposit(200).deposit(800).withdraw(100).withdraw(100).withdraw(200).withdraw(200).yield_interest().display_account_info()
+Pickeles.deposit(100).deposit(100).deposit(100).withdraw(100).interest_yeild().display_account_info()
+Peanut.deposit(200).deposit(800).withdraw(100).withdraw(100).withdraw(200).withdraw(200).interest_yeild().display_account_info()
+
+# print(Pickeles.display_account_info)
+# print(Peanut.display_account_info)
+
+# BankAccount.print_all_accounts()
