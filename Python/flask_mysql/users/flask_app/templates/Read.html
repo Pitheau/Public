@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users</h1>
+
+        <div>
+            <table class="table table-border-lg-10">
+                <tr>
+                    <th scope = "col"> First Name</th>
+                    <th scope = "col"> Last Name</th>
+                    <th scope = "col"> Email</th>
+                    <th scope = "col">  Created At</th>
+                    <th scope = "col">Action</th>
+                </tr>  
+                {% for user in all_users %} 
+                <tbody class = "row-cols-auto">
+                    <td>{{user.first_name}}</td>
+                    <td>{{user.last_name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.created_at}}</td>
+                    <td>
+                        <a href="/user/user_one">Show</a> |
+                        <a class = "btn btn-outline-primary" href="/user/{{user.id}}/edit">Edit</a> |
+                        <a href="/user/<int:user_id>/delete" class="btn btn-outline-primary">Delete</a>
+                    </td>
+                </tbody>
+                {% endfor %}
+            </table>    
+        <a href="/user/new" class="btn btn-outline-primary">Create</a>  
+        </div>
+</body>
+</html>
+
+
+
+
+

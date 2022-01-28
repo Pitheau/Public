@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit_user</title>
+</head>
+<body>
+    <div class = "container">
+        <h1>Edit User {{ this_user.id }}</h1>
+        <a href="/">home</a>
+        <div class = " class="card style="width: 16rem;">
+            <Form classform-control action="/user/update" method="POST">
+                <input type="hidden" name="">
+                <label for=""> First Name</label>
+                <input type="text" name="first_name" id="" value = "{{ this_user.first_name}}">
+                <label for=""> Last Name</label>
+                <input type="text" name="last_name" id="" value = "{{this_user.last_name}}">
+                <label for=""> Email</label>
+                <input type="text" name="email" id="" value = "{{ this_user.email}}">
+                <button>Edit</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

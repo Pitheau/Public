@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_one</title>
+</head>
+<body>
+    <div>
+        <h1>User</h1>
+        <a href="/">Home</a>
+    </div>
+    
+    <div class = "container border-primary " >
+        <p>Full Name: {{ user.first_name, user.last_name }}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Created ON {{user.created_at}}</p>
+        <p>Last Updated On: {{user.lastupdated_at}}</p>
+    </div>
+    <p>
+        <a href="/user/<int:user_id>/edit">Edit</a>
+        |
+        <a href="">Delete</a>
+    </p>
+    
+</body>
+</html>
