@@ -38,6 +38,19 @@ function factorial(n) {
 
 }
 console.log(factorial(num1))
+function factorial(n) {
+    if (n <= 0) {
+      return 1;
+    }
+    else {
+      n = Math.floor(n)
+      return n * factorial(n -1)
+    }
+  }
+  
+  console.log(factorial(num1))
+  console.log(factorial(num2))
+  console.log(factorial(num3))
 
 /*****************************************************************************/
 
