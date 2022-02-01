@@ -31,7 +31,13 @@ const expected3 = 1;
  *    floor decimals.
  * @returns {number} The result of !n.
  */
-function factorial(n) {}
+function factorial(n) {
+    if (n == 0) return 1;
+        n-1
+    return n * factorial(n)
+
+}
+console.log(factorial(num1))
 
 /*****************************************************************************/
 
@@ -71,3 +77,12 @@ const expected6 = 21;
  * @returns {number} The fibonacci number at the given position.
  */
 function fibonacci(num) {}
+
+function fibonacci(num, numnum = {0: 0, 1: 1}) {
+    if (num < 0) return null;
+    if (numnum[num] !== undefined){
+        return numnum[num];
+    }
+    numnum[num] = fibonacci(num - 1, numnum) + fibonacci(num - 2, numnum)
+    return numnum[num]
+}
