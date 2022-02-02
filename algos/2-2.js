@@ -1,11 +1,10 @@
 /*
-  Recursive Binary Search
-  Input: SORTED array of ints, int value
-  Output: bool representing if value is found
-  Recursively search to find if the value exists, do not loop over every element.
-  Approach:
-  Take the middle item and compare it to the given value.
-  Based on that comparison, narrow your search to a particular section of the array
+*Recursive Binary Search
+* Input: SORTED array of ints, int value
+*Output: bool representing if value is found
+*Recursively search to find if the value exists, do not loop over every element.
+Approach:
+*Take the middle item and compare it to the given value.Based on that comparison, narrow your search to a particular section of the array
 */
 
 const nums1 = [1, 3, 5, 6];
@@ -30,15 +29,51 @@ const expected3 = true;
  * @param {number} searchNum
  * @returns {boolean} Whether the searchNum was found in the sortedNums array.
  */
-function binarySearch(sortedNums, searchNum) {}
+function binarySearch(sortedNums, searchNum) {
+    let mid = Math.floor(sortedNums.length/2);
+
+    if (sortedNums.length === 1 && sortedNums[0] != searchNum){
+        return false;
+    }
+    if (searchNum === sortedNums[mid]){
+        return true;
+    }
+    else if (searchNum < sortedNums[mid]){
+        return binarySearch(sortedNums.slice(0,mid), searchNum)
+    }
+    else if (searchNum > sortedNums[mid]){
+            return binarySearch(sortedNums.slice(mid), searchNum)
+    }
+
+}
+console.log(binarySearch(nums1, searchNum1))
+console.log(binarySearch(nums2, searchNum2))
+console.log(binarySearch(nums3, searchNum3))
+
+function binarySearch(sortedNums, searchNum) {
+    let mid = Math.floor(sortedNums.length/2)
+    if (sortedNums.length <= 1 && sortedNums[0] != searchNum){
+        return false
+    }
+    if (searchNum == sortedNums[mid]){
+        return true;
+    }
+    if (searchNum > sortedNums[mid]){
+        return binarySearch(sortedNums.slice(mid), searchNum)
+    }
+    if (searchNum < sortedNums[mid]){
+        return binarySearch(sortedNums.slice(0, mid), searchNum)
+    }
+}
+
 
 /*****************************************************************************/
 
 /* 
-  Recursively reverse a string
-  helpful methods:
-  str.slice(beginIndex, endIndex)
-  returns a new string from beginIndex to endIndex exclusive
+*Recursively reverse a string
+*helpful methods:
+*str.slice(beginIndex, endIndex)
+returns a new string from beginIndex to endIndex exclusive
 */
 
 const str1 = "abc";
@@ -55,3 +90,14 @@ const expected2 = "";
  * @returns {string} The given str reversed.
  */
 function reverseStr(str) {}
+
+function binarySearch(sortedNums, searchNum) {}
+
+
+function reverseStr(str) {
+    if (str === "") {
+      return "";
+    }
+    const strLessFirst = str.slice(1);
+    return reverseStr(strLessFirst) + str[0];
+  }
