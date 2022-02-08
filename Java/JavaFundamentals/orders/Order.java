@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Order {
     public String name;
-    double total;
-    boolean ready;
-    ArrayList<Item>items;
+    public double total;
+    public boolean ready;
+    public ArrayList<Item> items = new ArrayList<Item>();
 
 }
