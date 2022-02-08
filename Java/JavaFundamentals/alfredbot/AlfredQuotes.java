@@ -21,6 +21,7 @@ public class AlfredQuotes {
         return "for snarky response return string";
     }
     
+    
 	// NINJA BONUS
 	// See the specs to overload the guessGreeting method
     // SENSEI BONUS
