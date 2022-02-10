@@ -9,41 +9,39 @@ class BankAccount{
             numAccounts++;
         }
         //Getter and Setter
-        public int getChecking(){
+        public double getChecking(){
             return this.checking;
         }
-        public int getSavings(){
+        public double getSavings(){
             return this.savings;
         }
-        public int getAllAccounts(){
+        public double getAllAccounts(){
             return (this.savings + this.checking);
         }
-        public int setChecking(int num){
-            this.checking += num;
-            this.totalAmount += num;
+        public void setChecking(double number){
+            this.checking += number;
+            this.totalAmount += number;
         }
-        public int setSavings(int num){
+        public void setSavings(double num){
             this.savings += num;
             this.totalAmount += num;
         }
-        public int takeChecking(int sum){
-            if(sum > checking){
+        public void takeChecking(double num){
+            if(num > checking){
                 System.out.println("You have insufficient amount for withdraw");
-                return
             }
             else{
-            this.checking -= sum;
-            this.totalAmount -= sum;
+            this.checking -= num;
+            this.totalAmount -= num;
             }
         }
-        public int takeSavings(int sum){
-            if(sum > savings){
+        public void takeSavings(double num){
+            if(num > savings){
                 System.out.println("You have insufficient amount for withdraw");
-                return
             }
             else{
-            this.savings -= sum;
-            this.totalAmount -= sum;
+            this.savings -= num;
+            this.totalAmount -= num;
             }
         }
     }
