@@ -12,7 +12,8 @@
 //     Select:
 //      Spring Web
 //      Spring Boot DevTools
-//
+//      JPA
+//      MySQL
 
 //  Add dependencies in pom.xml
         <dependency>
@@ -38,10 +39,18 @@
             <artifactId>jquery</artifactId>
             <version>3.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>   
 
 
 //  In src/main/resources/applications.properties add:
 spring.mvc.view.prefix=/WEB-INF/
+spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>?serverTimezone=UTC
+spring.datasource.username=<<root>>
+spring.datasource.password=<<CPAPitheau70$>>
+spring.jpa.hibernate.ddl-auto=update
 //  In src-main
 //      create a webapp file if not present.
 //          create a "WEB-INF" folder inside webapp. This will house the jsp files
