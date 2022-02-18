@@ -28,6 +28,8 @@
 					<td> Vendor </td>
 					<td> Amount </td>
 					<td> Description </td>
+					<td> Edit </td>
+					<td> Delete </td>
 				</tr>
 			</thead>
 			<tbody>
@@ -38,6 +40,12 @@
 						<td>${expense.amount }</td>
 						<td>${expense.description }</td>
 						<td><a href ="/expense/${expense.id}/edit">edit</a></td>
+						<td>
+							<form action="/expense/${expense.id}" method="post">
+    							<input type="hidden" name="_method" value="delete">
+    							<input type="submit" value="Delete">
+							</form>
+						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
