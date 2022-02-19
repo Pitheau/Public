@@ -8,9 +8,9 @@
 
 @RequestMapping("/greeting") Placed above class will add /greeting to all routes
 // Routes inside of the Class
-@GetMapping("/"){
-    public String home()
-    return "home.jsp"
+@GetMapping("/")
+    public String home(){
+    return "home.jsp";
 }
 
     @RequestMapping("/")

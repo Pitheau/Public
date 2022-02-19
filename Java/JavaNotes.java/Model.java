@@ -1,6 +1,9 @@
 
 
 // Add into class
+    @Entity
+    @Table(name="dojos")
+    public class Dojo{}//this should be autocreated
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
