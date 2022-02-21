@@ -48,3 +48,17 @@
 
 //use COMMAND + SHIFT + o to import.   Use the persistence and util.Date
 
+
+//Many to one Dojo example
+// Then One to many  the one here is Dojo
+    @OneToMany(mappedBy="dojo", fetch = FetchType.LAZY)
+    private List<Ninja> ninjas;
+    
+    public Dojo() {
+        
+    }
+
+// The Many to One.  Here Ninja connecting to Dojo at the Dojo.id in the Ninja table
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="dojo_id")
+    private Dojo dojo;

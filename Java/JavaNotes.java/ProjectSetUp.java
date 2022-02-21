@@ -67,8 +67,8 @@ spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>
 spring.datasource.username=root
 spring.datasource.password=CPAPitheau70$
 spring.jpa.hibernate.ddl-auto=update
-
-
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.mvc.hiddenmethod.filter.enabled=true
 //  In src-main
 //      create a webapp file if not present.
 //          create a "WEB-INF" folder inside of webapp. This will house the jsp files
