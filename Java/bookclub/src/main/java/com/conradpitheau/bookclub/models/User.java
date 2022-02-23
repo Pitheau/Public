@@ -37,12 +37,9 @@ public class User {
     private String password;
     @Column(updatable=false)
     
-    @OneToMany(mappedBy="sender", fetch = FetchType.LAZY)
-    private List<GIft> sendGifts;
-    
-    @OneToMany(mappedBy="receiver", fetch =FetchType.LAZY)
-    private List<GIft> receivedGifts;
-    
+    @OneToMany(mappedBy="user", fetch = FetchType.LAZY)
+    private List<Book> books;
+        
     
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date createdAt;
@@ -65,16 +62,6 @@ public class User {
 	public User() {
 	}
 
-	public User(Long id, @NotNull @Size(min = 5, max = 75) String name, @NotNull @Size(min = 5, max = 200) String email,
-			@NotNull @Size(min = 3, max = 60) String password, Date createdAt, Date updatedAt) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.email = email;
-		this.password = password;
-		this.createdAt = createdAt;
-		this.updatedAt = updatedAt;
-	}
 	public Long getId() {
 		return id;
 	}
@@ -99,6 +86,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public List<Book> getUserBooks() {
+		return books;
+	}
+	public void setUserBooks(List<Book> userBooks) {
+		this.books = userBooks;
+	}
 	public Date getCreatedAt() {
 		return createdAt;
 	}
@@ -117,19 +110,5 @@ public class User {
 	public void setConfirm(String confirm) {
 		this.confirm = confirm;
 	}
-	public List<GIft> getSendGifts() {
-		return sendGifts;
-	}
-	public void setSendGifts(List<GIft> sendGifts) {
-		this.sendGifts = sendGifts;
-	}
-	public List<GIft> getReceivedGifts() {
-		return receivedGifts;
-	}
-	public void setReceivedGifts(List<GIft> receivedGifts) {
-		this.receivedGifts = receivedGifts;
-	}
-	
 	
 }
-

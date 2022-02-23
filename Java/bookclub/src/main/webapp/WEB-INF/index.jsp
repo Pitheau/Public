@@ -26,7 +26,7 @@
 		
 		</div>
 		<div class = "row mt-4">
-			<div class= "col-4 ">
+			<div class= "col-6 ">
 			<h3> Registration</h3>
 				<form:form action="/register" method="post" modelAttribute="newUser">
 				    <p>
@@ -52,7 +52,7 @@
 				    <input type="submit" value="Submit"/>
 				</form:form>    
 			</div>
-			<div class= "col-4">
+			<div class= "col-6">
 			<h3> Login</h3>
 			<form:form action="/login" method="post" modelAttribute="newLogin">
 				    <p>

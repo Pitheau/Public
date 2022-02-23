@@ -18,21 +18,45 @@
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<div class = "container mt-5 ">
+	<div class = "container mt-5 ">
 		<div class = "row">
-		<h1 class= "text-primary">Welcome, ${name }</h1>
-		<h5> This is your dash-board. Nothing to see here yet</h5>
-		
+				<div class = "col-8">
+					<h1 class= "text-primary">Welcome, <c:out value ="${user.name}"></c:out> </h1>
+					<h5> Books from everyone's shelves:</h5>
+				</div>
+				<div class = "col-4">
+					<div>
+						<a href="/logout">Logout</a>
+					</div>
+					<div>
+						<a href="/book/new"> + Add a book to my shelf!</a>
+					</div>
+				</div>
+			</div>
+			<div class = "row mt-5">
+			<table class ="table table-striped">
+				<thead>
+				        <tr>
+				            <th>ID</th>
+				            <th>Title</th>
+				            <th>Author</th>
+				            <th>Posted By</th>
+				        </tr>
+				 </thead>
+				 <tbody>
+				     <c:forEach var="book" items="${books }">
+			         	<tr>
+			         		<td><c:out value = "${book.id }"></c:out></td>
+			         		<td><a href="/book/${book.id}"> <c:out value ="${book.title}"/></a></td>
+			         		<td><c:out value = "${book.author}"></c:out></td>
+			         		<td><c:out value = "${book.getUser().name}"></c:out></td>
+			      		</tr>
+			         </c:forEach>
+			  	</tbody>
+			  </table>		
 		</div>
-		<div class = "row mt-4">
-			
-		<a href="/logout">Logout</a>
-		</div>
-	
 	</div>
-
-
-	<script src="/webjars/jquery/jquery.min.js"></script>
-	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/webjars/jquery/jquery.min.js"></script>
+		<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
