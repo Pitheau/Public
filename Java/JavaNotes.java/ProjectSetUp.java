@@ -67,7 +67,6 @@ spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>
 spring.datasource.username=root
 spring.datasource.password=CPAPitheau70$
 spring.jpa.hibernate.ddl-auto=update
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.mvc.hiddenmethod.filter.enabled=true
 //  In src-main
 //      create a webapp file if not present.
@@ -159,17 +158,6 @@ public class Book {
     private Date createdAt;
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date updatedAt;
-    
-    public Book() {
-    }
-    public Book(String title, String desc, String lang, int pages) {
-        this.title = title;
-        this.description = desc;
-        this.language = lang;
-        this.numberOfPages = pages;
-    }
-    
-    // other getters and setters removed for brevity
     @PrePersist
     protected void onCreate(){
         this.createdAt = new Date();
@@ -178,6 +166,7 @@ public class Book {
     protected void onUpdate(){
         this.updatedAt = new Date();
     }
+//  REMEMBER CONTRUCTORS and GETTERS and SETTER.  Use SOURCE
 
 //  JSTL Tag Library
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

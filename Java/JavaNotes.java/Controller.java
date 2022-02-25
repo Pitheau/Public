@@ -47,9 +47,11 @@
     }
 
 //  <!-- Controller   -->
-        <!-- substantiate ArrayList of String Object naming it dojos -->
-        <!-- use dojo.add(""); to put items in array-->
-        <!-- model.addAttribute("name to use in in JSP", ArrayList Name) -->
+//        <!-- substantiate ArrayList of String Object naming it dojos -->
+  //      <!-- use dojo.add(""); to put items in array-->
+    //    <!-- model.addAttribute("name to use in in JSP", ArrayList Name) -->
+
+
         @RequestMapping("/dojos")
         public String index(Model model) {
             ArrayList<String> dojos = new ArrayList<String>;
