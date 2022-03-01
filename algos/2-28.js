@@ -114,6 +114,11 @@ constructor() {
 
 isEmpty() {
 // determine if the BST is empty and return a boolean
+if(this.root === null) {
+    return true;
+} 
+return false;
+}
 }
 
 min(current = this.root) {
