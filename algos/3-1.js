@@ -45,6 +45,41 @@ class BinarySearchTree {
     }
     
     }
+    contains(searchVal) {
+      let current = this.root;
+  
+      while (current) {
+        if (current.data === searchVal) {
+          return true;
+        }
+  
+        if (searchVal < current.data) {
+          current = current.left;
+        } else {
+          current = current.right;
+        }
+      }
+      return false;
+    }
+  
+    containsRecursive(searchVal, current = this.root) {
+      if (current === null) {
+        return false;
+      }
+  
+      if (current.data === searchVal) {
+        return true;
+      }
+  
+      if (searchVal < current.data) {
+        return this.containsRecursive(searchVal, current.left);
+      }
+  
+      if (searchVal > current.data) {
+        return this.containsRecursive(searchVal, current.right);
+      }
+    }
+  
 
     containsRecursive(searchVal){
       //Determine if the tree contains the given searchVal using recursive
