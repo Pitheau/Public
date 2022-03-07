@@ -47,6 +47,46 @@ function mean() {
 }
 console.log(food);
 
-console.log("***Question 5***")
 console.log("***Question 6***")
+// undelared rock r&b disco
+
+console.log(genre);
+var genre = "disco";
+rewind();
+function rewind() {
+    genre = "rock";
+    console.log(genre);
+    var genre = "r&b";
+    console.log(genre);
+}
+console.log(genre);
+
 console.log("***Question 7***")
+// Will print san jose seattle burbank san jose
+dojo = "san jose";
+console.log(dojo);
+learn();
+function learn() {
+    dojo = "seattle";
+    console.log(dojo);
+    var dojo = "burbank";
+    console.log(dojo);
+}
+console.log(dojo);
+
+console.log("***Question 8***")
+// name chicago students 65, hiring true then breaks do to attempted reassignment of a const
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+function makeDojo(name, students){
+    const dojo = {};
+    dojo.name = name;
+    dojo.students = students;
+    if(dojo.students > 50){
+        dojo.hiring = true;
+    }
+    else if(dojo.students <= 0){
+        dojo = "closed for now";
+    }
+    return dojo;
+}
