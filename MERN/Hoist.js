@@ -89,4 +89,5 @@ function makeDojo(name, students){
         dojo = "closed for now";
     }
     return dojo;
+    
 }
