@@ -27,5 +27,29 @@ const expected2 = 0;
 function diagonalDifference(sqrMatrix) {
 //given a square matrix (2d array) of integers
 // calculate the absolute difference between the sum of its diagonals
+let lrDiag = [];
+let rlDiag = [];
+let i = 0
+let j = 0
+for (i = 0; i < sqrMatrix.length; i++)
+    lrDiag.push sqrMatrix[1];
 
+}
+function diagonalDifference(sqrMatrix) {
+    let i = 0;
+    let j = sqrMatrix.length-1;
+    let sum = 0;
+    let sum2 = 0;
+    while(i < sqrMatrix.length){
+        sum += sqrMatrix[i][i];
+        sum2 += sqrMatrix[i][j];
+        i++;
+        j--;
+    }
+    let difference = sum - sum2;
+    if(difference >= 0 ){
+        return difference;
+    }else{
+        return -difference;
+    }
 }
