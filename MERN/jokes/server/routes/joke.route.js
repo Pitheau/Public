@@ -1,4 +1,4 @@
-const { application } = require("express")
+
 const JokeController = require("../controllers/joke.controller")
 
 module.exports = app =>{
