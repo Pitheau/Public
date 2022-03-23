@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8000;
-    
-app.listen(port, () => console.log(`Listening on port: ${port}`) );
+require('../server/routes/product.routes.js')(app); 
+app.listen(8000, () => {
+    console.log("Listening at Port 8000")
+})
