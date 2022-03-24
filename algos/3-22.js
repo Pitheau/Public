@@ -33,6 +33,24 @@ lastName: "Smith",
 
 
 function findObjects(criteria, collection) {
+const result = [];
+
+    for (item of collection) {
+    let found = false;
+    for (key in criteria) {
+        if (item.hasOwnProperty(key)) {
+            if (criteria[key] === item[key]) {
+                found = true;
+            } else {
+                found = false;
+            }
+        }
+    }
+    if (found) {
+        result.push(item);
+    }
+    }
+    return result
 }
 
 function findObjectsFunctional(criteria, collection) {}
@@ -106,4 +124,15 @@ const expected3 = null;
 
 
 function findByIdAndUpdate(id, updatedVals, collection) {
+for (item of collection) {
+    if (item.id === id) {
+    for (key in updatedVals) {
+        if (item.hasOwnProperty(key)) {
+        item[key] = updatedVals[key]
+        }
+    }
+    return item
+    }
+}
+return null
 }
