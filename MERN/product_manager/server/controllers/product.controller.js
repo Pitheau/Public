@@ -3,14 +3,14 @@ const {Product} = require("../models/product.model")
 // create
 module.exports.createProduct = ( req,  res ) =>{
     Product.create(req.body)
-    .then(newProduct=> res.json(newProduct))
+    .then(response=> res.json(response))
     .catch(err=>res.status(400).json(err))
 
 }
 // get all products
 module.exports.allProducts = ( req,  res ) =>{
     Product.find({})
-    .then(products=> res.json(products))
+    .then(response=> res.json(response))
     .catch(err=>res.status(400).json(err))
 }
 

@@ -51,11 +51,11 @@ const Dashboard = () => {
                     </div>
                     <button className="btn btn-primary btn-block mt-3">Create</button>
             </form>
-            {/* {
-                errors.map((err,  i)) => (
-                    <p style = {{color:"red"}} key = i >{err}</p>
-                ))
-            } */}
+                {
+                    errors.map((err,  i)) => (
+                        <p style = {{color:"red"}} key = i >{err}</p>
+                    ))
+                }
         <hr/>
 
         <h1>All Products</h1>
