@@ -15,6 +15,7 @@ const handleSubmit = (e) => {
     axios.post(`http:localhost:8000/api/products`, {title, price, description})
     .then(res=>{
         props.reload()
+        history.push("/api/products")
     })
     .catch(err=>{
         const errRes= err.response.data.errors

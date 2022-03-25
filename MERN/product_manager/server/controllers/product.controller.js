@@ -2,6 +2,7 @@ const {Product} = require("../models/product.model")
 
 // create
 module.exports.createProduct = ( req,  res ) =>{
+    console.log(res.body)
     Product.create(req.body)
     .then(response=> res.json(response))
     .catch(err=>res.status(400).json(err))
