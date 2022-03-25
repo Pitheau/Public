@@ -10,6 +10,13 @@ npm init -y  // this will create the package.jon for dependencies
 
 npm install express mongoose cors // dependancies needed
 
+//create front end folders structure
+
+
+
+//to start front end React
+npm run start
+
 // in client folder install dependencies
 npm install react-router-dom@5 axios
 
