@@ -44,7 +44,8 @@ useEffect(() => {
         {
             products.map((product, i)=>(
                 <tr key = {i}>
-                        <td> {product.title} </td>
+                            {/* Note the use of braces and back-ticks for path  & use of ${product._id} to get the data by using the _id atribute*/}
+                        <td> <Link to={`api/products/showOne/${product._id}`}>{product.title}</Link> </td>
                         <td> {product.price} </td>
                         <td> {product.avaible?"Yes":"No"} </td>
                 </tr>
