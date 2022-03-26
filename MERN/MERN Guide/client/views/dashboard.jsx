@@ -38,6 +38,7 @@ useEffect(() => {
             <th>Price</th>
             <th>Description</th>
             <th>Availible</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -48,6 +49,8 @@ useEffect(() => {
                         <td> <Link to={`api/products/showOne/${product._id}`}>{product.title}</Link> </td>
                         <td> {product.price} </td>
                         <td> {product.avaible?"Yes":"No"} </td>
+                        {/* Below is styled to look like a button */}
+                        <td> <Link className= "btn btn-success" to={`/api/products/edit/${product._id}`}>{product.title}</Link>Edit </td>
                 </tr>
             ))
         }

@@ -39,4 +39,10 @@ useEffect(() => {
         }
     </div>
 
+{"break to keep the red down"}
     // Link to navigate from current. This expample a back button to return to dashboard
+<>
+<Link to="/"> Back </Link>
+// or style it to look like a button
+<Link className="btn btn-primary" to="/"> Back </Link>
+</>
