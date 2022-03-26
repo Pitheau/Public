@@ -14,6 +14,7 @@ import {Link} from 'react-router-dom'
 
 //set the information in state.  This example is for jobs
 const [jobs, setJobs] = useState()
+const [refresh, setRefresh] = useState()
 
 //useEffect process to grab data on load
 useEffect(() => {
@@ -23,11 +24,21 @@ useEffect(() => {
     .then(res=>console.log(res.data))
     .catch(err=>console.log(err))
     //below empty array is to trigger refresh of the the useEffect
-}, [])
+}, [refresh])
 
-// to add a Link to another page(must be in return statement)Below is for a jog project
-<>
-<Link to = "/jobs/new"> Create a new job </Link>
+// note the refresh above is trigger by the change in state of refresh in the handleDelete below
+const handleDelete = (DeleteId) =>{
+    axios.delete(`http://localhost:8000/api/products/${deleteId}`)
+        .then(res =>{
+            setRefresh(!refresh)
+        })
+        .catch(err=>console.log(err))
+
+}
+
+// to add a Link to another page(must be in return statement)Below is for a product project, puts the link above the table
+
+<Link to = "/api/product/new"> Create a new job </Link>
 </>
 //table for data basic with boolean example. Below is for product and includes two turnary operator "product?"" then ":" and for the boolean input to check box
 <>
@@ -38,7 +49,7 @@ useEffect(() => {
             <th>Price</th>
             <th>Description</th>
             <th>Availible</th>
-            <th>Actions</th>
+            <th colspan = {2}>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -51,6 +62,7 @@ useEffect(() => {
                         <td> {product.avaible?"Yes":"No"} </td>
                         {/* Below is styled to look like a button */}
                         <td> <Link className= "btn btn-success" to={`/api/products/edit/${product._id}`}>{product.title}</Link>Edit </td>
+                        <td> <button className="btn btn-danger" onClick={() =>handleDelete(product._id)}> Delete </button></td>
                 </tr>
             ))
         }

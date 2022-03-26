@@ -12,7 +12,6 @@ const [errors, serErrors] = useHistory([])
 
 
 // set the state inside the function before the return. Product in this example
-const CreateJob = () => {
     const [title, setTitle] = useState("")
     const [price, setPrice] = useState("")
     const [description, setDescription] = useState("")
