@@ -1,6 +1,6 @@
 mkdir "project name", //then cd into folder
 // create front end by.
-create-react-app client 
+npx create-react-app client 
 
 
 //create back end by by opening another terminal and in project folder
