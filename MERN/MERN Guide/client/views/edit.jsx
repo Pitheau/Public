@@ -1,5 +1,5 @@
 //rafce to  formate
-import React, {useEffect, useState} form 'react'
+import React, {useEffect, useState} from 'react'
 //useEffect and useState to populate on load
 import axios from "axios"
 //axios to update backend
@@ -7,7 +7,7 @@ import { useHistory, useParams } from "react-router"
 //useParams to grab id within the route to populate and to update
 
 //inside the function
-const {id} = useParams
+const {id} = useParams()
 // this will set id to the id in useParams
 
 //creates variable the same as the object atributes 
@@ -44,6 +44,7 @@ const handleSubmit = (e) => {
                 errorArray.push(errorResponse[key].message)
             }
             setErrors(errorArray)
+        })
 }
 
 // This id is from const id

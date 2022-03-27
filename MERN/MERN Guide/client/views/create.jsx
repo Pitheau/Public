@@ -5,6 +5,8 @@ import React, {useState} from 'react'
 // form- will use for the inputs
 import axios from "axios"
 //axios to post the data to the backend
+
+//below is in the function
 const history = useHistory()
 //useHistory for after submission, redirect to dashboard
 const [errors, serErrors] = useHistory([])

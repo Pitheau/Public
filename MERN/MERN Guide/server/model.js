@@ -15,7 +15,7 @@ const  JobSchema = new mongoose.Schema({
         min: [70000, "Salary must be at least $70,000"]
     },
     remote:{
-        type: SVGAnimatedBoolean,
+        type: Boolean,
         required: [true, "Remote option is required"],
     },
 },{ timestamps : true })
