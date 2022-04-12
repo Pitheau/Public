@@ -25,7 +25,7 @@ const  StudentSchema = new mongoose.Schema({
 },{ timestamps : true })
 
 
-module.exports.Job = mongoose.model('Student' , StudentSchema)
+module.exports.Student = mongoose.model('Student' , StudentSchema)
 
 
 //workflow: got to controller.js and set up
