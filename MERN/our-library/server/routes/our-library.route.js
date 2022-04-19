@@ -1,7 +1,6 @@
 
 const StudentController = require("../controllers/our-library.controller")
 
-
 module.exports = (app) => {
     app.get("/api", StudentController.index)
     app.get("/api/book", StudentController.allStudent)

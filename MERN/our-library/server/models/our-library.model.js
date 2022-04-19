@@ -1,7 +1,6 @@
 
 const mongoose = require('mongoose');
 
-
 const  StudentSchema = new mongoose.Schema({
     //create atributes for this obect as a string of objects
     name:{
