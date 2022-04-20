@@ -1,4 +1,3 @@
-
 const StudentController = require("../controllers/our-library.controller")
 
 module.exports = (app) => {
