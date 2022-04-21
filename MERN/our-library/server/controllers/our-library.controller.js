@@ -26,6 +26,7 @@ module.exports.createStudent = (req , res) =>{
         .catch(err => res.status(400).json(err))
 }
 
+
 //edit
 module.exports.editStudent= (req , res) =>{
     Student.findOneAndUpdate({_id: req.params.id}, req.body, {new:true , runValidators:true})
